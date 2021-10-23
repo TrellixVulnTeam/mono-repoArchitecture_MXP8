@@ -6,7 +6,11 @@ Leern is a tool for managing JavaScript projects with multiple packages, built o
 
 # LERNA COMMANDS
 
-"start": "lerna run start --scope=web-client",
-"start": "lerna run start --{scope=web-client, backend-api}",
-npx lerna clean -y   
-npx lerna bootstrap --hoist
+"start": "lerna run start --scope=web-client".\
+"start": "lerna run start --{scope=web-client, backend-api}".\
+npx lerna clean -y  : Cleans all the node modules from diffrent projects 
+npx lerna bootstrap --hoist : Create common node module for two different  projects.
+
+# start project
+
+npm run start  : Runs the script from package.json of main wrapper repository, which in our case is MONO-REPOARCGUTECTURE
